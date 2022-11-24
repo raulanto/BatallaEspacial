@@ -12,7 +12,6 @@ BLANCO = (255, 255, 255)
 
 # Grupos de sprint
 grupo_enemegios = pygame.sprite.Group()
-
 bala_grupo = pygame.sprite.Group()
 animacion_explp = pygame.sprite.Group()
 metiorito_grupo = pygame.sprite.Group()
@@ -49,7 +48,7 @@ def muestra_texto(pantalla, fuente, texto, color, dimensiones, x, y):
     rectangulo.center = (x, y)
     pantalla.blit(superficie, rectangulo)
 
-
+#Musica
 pygame.mixer.init()
 musica_fondo=pygame.mixer.Sound(os.path.join(carpeta_sonido,"fondomusic.mp3"))
 musica_fondo.set_volume(0.1)
